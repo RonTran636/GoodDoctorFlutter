@@ -10,7 +10,7 @@ part 'app_router.gr.dart';
   routes: <AutoRoute>[
     AutoRoute(page: SplashPage, initial: true),
     CustomRoute(
-      page: OnBoardingPage,
+      page: OnboardingPage,
       transitionsBuilder: TransitionsBuilders.slideLeft,
     ),
     CustomRoute(

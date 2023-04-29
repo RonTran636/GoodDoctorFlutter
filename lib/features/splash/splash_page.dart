@@ -15,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     Future.delayed(
       const Duration(milliseconds: 1500),
-      () => getIt<AppRouter>().push(const OnBoardingRoute()),
+      () => getIt<AppRouter>().push(const OnboardingRoute()),
     );
   }
 

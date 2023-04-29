@@ -23,10 +23,10 @@ class _$AppRouter extends RootStackRouter {
         child: const SplashPage(),
       );
     },
-    OnBoardingRoute.name: (routeData) {
+    OnboardingRoute.name: (routeData) {
       return CustomPage<dynamic>(
         routeData: routeData,
-        child: const OnBoardingPage(),
+        child: const OnboardingPage(),
         transitionsBuilder: TransitionsBuilders.slideLeft,
         opaque: true,
         barrierDismissible: false,
@@ -50,8 +50,8 @@ class _$AppRouter extends RootStackRouter {
           path: '/',
         ),
         RouteConfig(
-          OnBoardingRoute.name,
-          path: '/on-boarding-page',
+          OnboardingRoute.name,
+          path: '/onboarding-page',
         ),
         RouteConfig(
           LoginRoute.name,
@@ -73,15 +73,15 @@ class SplashRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [OnBoardingPage]
-class OnBoardingRoute extends PageRouteInfo<void> {
-  const OnBoardingRoute()
+/// [OnboardingPage]
+class OnboardingRoute extends PageRouteInfo<void> {
+  const OnboardingRoute()
       : super(
-          OnBoardingRoute.name,
-          path: '/on-boarding-page',
+          OnboardingRoute.name,
+          path: '/onboarding-page',
         );
 
-  static const String name = 'OnBoardingRoute';
+  static const String name = 'OnboardingRoute';
 }
 
 /// generated route for

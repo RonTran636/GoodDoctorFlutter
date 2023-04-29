@@ -23,6 +23,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/svg/calendar.svg');
+
+  /// File path: assets/svg/onboarding_image.svg
+  SvgGenImage get onboardingImage => const SvgGenImage('assets/svg/onboarding_image.svg');
 }
 
 class $AssetsTranslationsGen {
