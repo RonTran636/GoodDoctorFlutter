@@ -21,7 +21,7 @@ class BoosyButton extends StatelessWidget {
   const BoosyButton._({
     Key? key,
     this.onPressed,
-    this.backgroundColor,
+    this.backgroundColor = AppColor.primaryColor,
     required this.text,
     this.textColor,
     this.padding,
@@ -227,7 +227,6 @@ class BoosyButton extends StatelessWidget {
       width: 1.sw,
       decoration: BoxDecoration(
         color: backgroundColor,
-        gradient: backgroundColor == null ? AppColor.gradient3Level : null,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: ElevatedButton(

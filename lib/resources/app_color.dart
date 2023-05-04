@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppColor {
+  static const primaryColor = Color(0xFF0F8FB9);
+  static const textBlack = Color(0xFF798395);
+  static const primaryDark = Color(0xFF006D94);
+
   static const white = Colors.white;
   static const black = Colors.black;
   static const transparent = Colors.transparent;
   static const errorRed = Colors.redAccent;
-  static const blackBackground = Color(0xFF151515);
+  static const blackBackground = Color(0xFFF4F6F8);
 
   //Social app
   static const greyAppleBackground = Color(0xFF434343);

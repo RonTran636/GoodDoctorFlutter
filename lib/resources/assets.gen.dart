@@ -14,6 +14,9 @@ import 'package:flutter/services.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/login_background.png
+  AssetGenImage get loginBackground => const AssetGenImage('assets/images/login_background.png');
+
   /// File path: assets/images/splash_image.png
   AssetGenImage get splashImage => const AssetGenImage('assets/images/splash_image.png');
 }
@@ -21,11 +24,23 @@ class $AssetsImagesGen {
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
+  /// File path: assets/svg/apple.svg
+  SvgGenImage get apple => const SvgGenImage('assets/svg/apple.svg');
+
   /// File path: assets/svg/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/svg/calendar.svg');
 
+  /// File path: assets/svg/facebook.svg
+  SvgGenImage get facebook => const SvgGenImage('assets/svg/facebook.svg');
+
+  /// File path: assets/svg/google.svg
+  SvgGenImage get google => const SvgGenImage('assets/svg/google.svg');
+
   /// File path: assets/svg/onboarding_image.svg
   SvgGenImage get onboardingImage => const SvgGenImage('assets/svg/onboarding_image.svg');
+
+  /// File path: assets/svg/twitter.svg
+  SvgGenImage get twitter => const SvgGenImage('assets/svg/twitter.svg');
 }
 
 class $AssetsTranslationsGen {

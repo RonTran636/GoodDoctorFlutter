@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:good_doctor/generated/app_router.dart';
 import 'package:good_doctor/injection_container.dart';
+import 'package:good_doctor/resources/assets.gen.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -21,6 +22,9 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Image.asset(
+      Assets.images.splashImage.path,
+      fit: BoxFit.fill,
+    );
   }
 }

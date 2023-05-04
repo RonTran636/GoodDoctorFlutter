@@ -30,7 +30,7 @@ class BoosyText extends StatelessWidget {
         text,
         textStyle: GoogleFonts.syne(
           fontSize: 27.sp,
-          color: color ?? AppColor.white,
+          color: color ?? AppColor.primaryColor,
           fontWeight: FontWeight.w800,
         ),
         overflow: overflow,
@@ -50,7 +50,7 @@ class BoosyText extends StatelessWidget {
         text,
         textStyle: GoogleFonts.syne(
           fontSize: 16.sp,
-          color: color ?? AppColor.white,
+          color: color ?? AppColor.textBlack,
           fontWeight: fontWeight,
           decoration: underline == true ? TextDecoration.underline : TextDecoration.none,
         ),
@@ -256,7 +256,7 @@ class BoosyText extends StatelessWidget {
       BoosyText._(
         text,
         textStyle: GoogleFonts.inter(
-          color: color,
+          color: color ?? AppColor.primaryColor,
           fontSize: fontSize,
           fontWeight: fontWeight,
           height: height,

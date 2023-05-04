@@ -95,17 +95,19 @@ class BoosyTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w),
+          padding: EdgeInsets.symmetric(horizontal: 2 * BoosySpacer.medium.space),
           child: Text(
             label,
-            style: GoogleFonts.syne(
+            style: GoogleFonts.inter(
               fontSize: 16.sp,
-              color: AppColor.white,
+              color: AppColor.textBlack,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ),
         BoosyVerticalSpacer.small(),
         Container(
+          margin: EdgeInsets.symmetric(horizontal: BoosySpacer.medium.space),
           decoration: BoxDecoration(
             color: backgroundColor,
             borderRadius: BorderRadius.circular(8.r),
@@ -122,7 +124,7 @@ class BoosyTextField extends StatelessWidget {
             maxLength: maxLength,
             autofocus: autoFocus,
             style: GoogleFonts.syne(
-              color: AppColor.white,
+              color: AppColor.primaryColor,
               fontSize: fontSize ?? 14.sp,
               fontWeight: fontWeight ?? FontWeight.w600,
             ),

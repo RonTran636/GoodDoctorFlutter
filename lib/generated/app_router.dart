@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:good_doctor/features/login/login_page.dart';
 import 'package:good_doctor/features/onboarding/on_boarding_page.dart';
