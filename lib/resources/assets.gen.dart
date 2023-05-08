@@ -5,7 +5,7 @@
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import
+// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -19,6 +19,9 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/splash_image.png
   AssetGenImage get splashImage => const AssetGenImage('assets/images/splash_image.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [loginBackground, splashImage];
 }
 
 class $AssetsSvgGen {
@@ -27,8 +30,14 @@ class $AssetsSvgGen {
   /// File path: assets/svg/apple.svg
   SvgGenImage get apple => const SvgGenImage('assets/svg/apple.svg');
 
+  /// File path: assets/svg/bell.svg
+  SvgGenImage get bell => const SvgGenImage('assets/svg/bell.svg');
+
   /// File path: assets/svg/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/svg/calendar.svg');
+
+  /// File path: assets/svg/contact.svg
+  SvgGenImage get contact => const SvgGenImage('assets/svg/contact.svg');
 
   /// File path: assets/svg/facebook.svg
   SvgGenImage get facebook => const SvgGenImage('assets/svg/facebook.svg');
@@ -36,11 +45,35 @@ class $AssetsSvgGen {
   /// File path: assets/svg/google.svg
   SvgGenImage get google => const SvgGenImage('assets/svg/google.svg');
 
+  /// File path: assets/svg/home.svg
+  SvgGenImage get home => const SvgGenImage('assets/svg/home.svg');
+
+  /// File path: assets/svg/medicine.svg
+  SvgGenImage get medicine => const SvgGenImage('assets/svg/medicine.svg');
+
   /// File path: assets/svg/onboarding_image.svg
   SvgGenImage get onboardingImage => const SvgGenImage('assets/svg/onboarding_image.svg');
 
+  /// File path: assets/svg/profile.svg
+  SvgGenImage get profile => const SvgGenImage('assets/svg/profile.svg');
+
   /// File path: assets/svg/twitter.svg
   SvgGenImage get twitter => const SvgGenImage('assets/svg/twitter.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [
+        apple,
+        bell,
+        calendar,
+        contact,
+        facebook,
+        google,
+        home,
+        medicine,
+        onboardingImage,
+        profile,
+        twitter
+      ];
 }
 
 class $AssetsTranslationsGen {
@@ -48,6 +81,9 @@ class $AssetsTranslationsGen {
 
   /// File path: assets/translations/en.json
   String get en => 'assets/translations/en.json';
+
+  /// List of all assets
+  List<String> get values => [en];
 }
 
 class Assets {
@@ -116,6 +152,17 @@ class AssetGenImage {
     );
   }
 
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
+    );
+  }
+
   String get path => _assetName;
 
   String get keyName => _assetName;
@@ -137,13 +184,14 @@ class SvgGenImage {
     AlignmentGeometry alignment = Alignment.center,
     bool allowDrawingOutsideViewBox = false,
     WidgetBuilder? placeholderBuilder,
-    Color? color,
-    BlendMode colorBlendMode = BlendMode.srcIn,
     String? semanticsLabel,
     bool excludeFromSemantics = false,
+    SvgTheme theme = const SvgTheme(),
+    ColorFilter? colorFilter,
     Clip clipBehavior = Clip.hardEdge,
-    bool cacheColorFilter = false,
-    SvgTheme? theme,
+    @deprecated Color? color,
+    @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
+    @deprecated bool cacheColorFilter = false,
   }) {
     return SvgPicture.asset(
       _assetName,
@@ -157,15 +205,18 @@ class SvgGenImage {
       alignment: alignment,
       allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
       placeholderBuilder: placeholderBuilder,
-      color: color,
-      colorBlendMode: colorBlendMode,
       semanticsLabel: semanticsLabel,
       excludeFromSemantics: excludeFromSemantics,
+      theme: theme,
+      colorFilter: colorFilter,
+      color: color,
+      colorBlendMode: colorBlendMode,
       clipBehavior: clipBehavior,
       cacheColorFilter: cacheColorFilter,
-      theme: theme,
     );
   }
 
   String get path => _assetName;
+
+  String get keyName => _assetName;
 }

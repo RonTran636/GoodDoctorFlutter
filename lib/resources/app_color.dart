@@ -4,6 +4,7 @@ class AppColor {
   static const primaryColor = Color(0xFF0F8FB9);
   static const textBlack = Color(0xFF798395);
   static const primaryDark = Color(0xFF006D94);
+  static const activeNav = Color(0xFF1A9CC6);
 
   static const white = Colors.white;
   static const black = Colors.black;
@@ -19,6 +20,7 @@ class AppColor {
   static const grey56 = Color(0xFF363956);
   static const grey67 = Color(0xFF676767);
   static const grey98 = Color(0xFF6D7B98);
+  static const greyCB = Color(0xFFB6BDCB);
   static const greyText = Color(0xFF707070);
 
   static const black15 = Color(0xFF151515);

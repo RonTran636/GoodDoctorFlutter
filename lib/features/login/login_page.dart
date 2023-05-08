@@ -1,6 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:good_doctor/features/login/widgets/social_login_widget.dart';
+import 'package:good_doctor/generated/app_router.dart';
+import 'package:good_doctor/injection_container.dart';
 import 'package:good_doctor/resources/app_color.dart';
 import 'package:good_doctor/resources/assets.gen.dart';
 import 'package:good_doctor/widgets/boosy_button_widget.dart';
@@ -8,6 +11,7 @@ import 'package:good_doctor/widgets/boosy_spacer.dart';
 import 'package:good_doctor/widgets/boosy_text_field_widget.dart';
 import 'package:good_doctor/widgets/boosy_text_widget.dart';
 
+@RoutePage()
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -66,7 +70,7 @@ class LoginPage extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: BoosySpacer.medium.space),
                     child: BoosyButton.primary(
                       'Login',
-                      onPressed: () {},
+                      onPressed: () => getIt<AppRouter>().replace(const MainRoute()),
                       context: context,
                     ),
                   ),
