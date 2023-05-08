@@ -1,16 +1,7 @@
-# good_doctor
+# GoodDoctorFlutter
 
-A new Flutter project.
+A small project built with Flutter, having some basic screens like splash, login, bottom navigation screen etc.. This project is meant for practicing UI and to test new package/structure or simply just for relaxing :) Feel free to stop by and comment on anything.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
